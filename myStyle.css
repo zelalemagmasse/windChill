@@ -1,0 +1,16 @@
+.bg {
+    /* The image used */
+    background-image: url("image/windchill.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.form-group{
+    width: 45%;
+
+}

@@ -4,16 +4,44 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="windSpeedCalcu.js"></script>
+    <link rel="stylesheet" href="myStyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
-<form action="Calculate.html">
-    Temperature (in Fahrenheit):
-    <input type="number" id="tempInFahr" placeholder=""><br>
-    Wind speed:
-    <input type="number" id="windSpeed" placeholder=""> (miles per hour)<br>
-    <input type="submit" >
-    <input type="button" onclick="Calculate()" value="calculate">
-</form>
+<body class="bg">
+<div class="container">
+    <h2>Windchill Calculator</h2>
+    <form class="form-horizontal" method="post">
+        <div class="form-group">
+            <div class="col-sm-10">
+                <label class="control-label col-sm-2" for="tempInFahr"> Temperature(°F):</label>
+                <input type="number" class="form-control" id="tempInFahr"  size="6">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-10">
+            <label class="control-label col-sm-2" for="windSpeed">Wind speed(m/h):</label>
+            <input type="number" class="form-control" id="windSpeed"  size="6">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" onclick="Calculate()">Submit</button>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-10">
+            <label class="control-label col-sm-2" for="result">Windchill is:</label>
+            <input type="number" class="form-control" id="result"  size="6">
+            </div>
+        </div>
+
+    </form>
+</div>
+
 <script src="windSpeedCalcu.js"></script>
 
 </body>
